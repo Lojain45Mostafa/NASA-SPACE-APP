@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Outer Space", "Saturn's moon Titan", "and learn" ];
   const period = 2000;
 
   useEffect(() => {
@@ -55,10 +55,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <span className="tagline">Welcome to GalaxyCrew</span>
+                <h1>{`Let's Explore`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Titan Moon", "Mars", "Kawkab el oaryeb men el 2ard" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Titan, Saturn's largest moon, is the only known celestial body in our solar system, other than Earth, to have stable bodies of liquid on its surface. However, these are not lakes or oceans of water but rather vast lakes and rivers of liquid methane and ethane. This unique feature makes Titan a fascinating and otherworldly destination for future exploration, as scientists believe it could provide clues about the potential for extraterrestrial life in environments very different from Earth</p>
+                  <button onClick={() => console.log('connect')}>Let’s Learn <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
