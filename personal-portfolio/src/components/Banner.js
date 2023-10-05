@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Outer Space", "Saturn's moon Titan", "and learn" ];
+  const toRotate = [ "Outer Space", "Europa's surface ", "and learn" ];
   const period = 2000;
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to GalaxyCrew</span>
                 <h1>{`Let's Explore`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Titan Moon", "Mars", "Kawkab el oaryeb men el 2ard" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Titan, Saturn's largest moon, is the only known celestial body in our solar system, other than Earth, to have stable bodies of liquid on its surface. However, these are not lakes or oceans of water but rather vast lakes and rivers of liquid methane and ethane. This unique feature makes Titan a fascinating and otherworldly destination for future exploration, as scientists believe it could provide clues about the potential for extraterrestrial life in environments very different from Earth</p>
+                  <p>Europa is a moon of Jupiter, notable for its icy surface and the possibility of a subsurface ocean. It's the smallest of Jupiter's four largest moons and has a smooth, relatively young icy shell. Beneath the ice, there's a massive subsurface ocean, making it a prime candidate for potential extraterrestrial life within our solar system.</p>
                   <button onClick={() => console.log('connect')}>Let’s Learn <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
