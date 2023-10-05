@@ -4,6 +4,9 @@ import projImg1 from "../assets/img/europa.png";
 import projImg2 from "../assets/img/astranut2.jpg";
 import projImg3 from "../assets/img/rocket3.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg4 from "../assets/img/pexels-pixabay-2166.jpg";
+import projImg5 from "../assets/img/Jmoonjpg.jpg";
+import projImg6 from "../assets/img/solar.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -25,21 +28,21 @@ export const Projects = () => {
       description: "Design & Development",
       imgUrl: projImg3,
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg1,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
+     {
+       title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg4,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+       imgUrl: projImg5,
+     },
+     {
+       title: "Business Startup",
+       description: "Design & Development",
+       imgUrl: projImg6,
+     },
   ];
 
   return (
